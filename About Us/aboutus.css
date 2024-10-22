@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333333;
+    color: #fff;
+    line-height: 1.6;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
+
+header {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 90px;
+    background: rgb(53, 52, 52);
+    height: 90px;
+    z-index: 999;
+}
+
+
+header .logo img {
+    position: relative;
+    margin-top: 10px;
+    right: 30px;
+    width: 170px;
+    max-height: 80px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center; /* Pusatkan item secara horizontal */
+    align-items: center;
+    flex-grow: 1;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 70px;
+    margin-left: 180px;
+    margin-right: 90px;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header a {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+header a:hover {
+    color: rgb(233, 233, 233);
+    transform: translateY(2px);
+}
+
+header a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+}
+
+header a:hover::after {
+    font-size: 0px;
+    width: 100%;
+    background: rgb(253, 253, 253);
+}
+
+header img {
+    width: 45px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 40px;
+}
+
+header .signup-btn {
+    color: white
+    
+}
+ 
+
+.signup-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #4d4d4d;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.signup-btn:hover {
+    transform: translateY(-3px);
+    background-color: #444343;
+    color: #ffffff;
+}
+
+section{
+    padding: 390px 100px;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: grey;
+}
+
+
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.m1{
+    background-image: url('BG.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+.logoG{
+    width: 500px;
+    height: auto;
+}
+
+.m1 h2{
+    max-width: 500px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.con1{
+    background-color: #272727;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.cont{
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: larger;
+    text-align: center;
+    margin-inline: 150px;
+}
+
+.con2{
+    background-color: #3F4445;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.con2 h2{
+    color: #fff;
+    font-family: sans-serif;
+    text-align: left;
+    margin-inline: 150px;
+}
+
+.con2 p{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: larger;
+    text-align: left;
+    margin-inline: 150px;
+}
+
+.partner{
+    background-color: #7c7c7c;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-bottom: 5%;
+}
+
+.partner h2{    
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: -30px;
+    padding-bottom: 25px;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    align-items: center;
+    margin: 20px;
+    gap: 47px;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+}
+
+
+/*FOOTER SECTION*/
+footer {
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(36, 35, 35), rgb(0, 0, 0));
+    color: #fff;
+    padding: 80px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding : 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 30px;
+}
+
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far {
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.underline {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
